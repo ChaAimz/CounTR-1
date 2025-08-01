@@ -22,13 +22,14 @@ import pandas as pd
 import torch
 import torch.distributed as dist
 import wandb
-from torch._six import inf
+import math
 import matplotlib.pyplot as plt
 from torchvision import transforms
 import cv2
 from tqdm import tqdm
 import numpy as np
 
+inf = math.inf
 
 class SmoothedValue(object):
     """Track a series of values and provide access to smoothed values over a
